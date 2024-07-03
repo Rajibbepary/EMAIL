@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="shortcut icon" href="images/user.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+   
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                
+                <h1 class="logo"><b><span>R</span>ajib.</b></h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+            <p><i>Web <span class="auto-type"></span></i></p>
+            <i><h2 id="txt1">Hi I am <span>Rajib</span> <br>Raj From Bangladesh</h2></i>
+            </div>
+        </div>
+    </div>
+
+    <!-----------About section---------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1 " id="about_col_1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h2 class="sub-titel" id="about_col_2">About Me</h2>
+                <p style="color: beige; padding: 2px;white-space: 1px;" id="about_col_3">Hi,
+                    As a Software Engineer with expertise in MERN stack development, I have a strong track record of building efficient, scalable websites and web applications for businesses of all sizes. I follow the best coding standards and conventions to ensure that my work is scalable and easy to understand. I pride myself on delivering high-quality work and excellent communication throughout the development process.</p>
+
+                    <div class="tab-titals">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experinence')">Experinence</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI & UX design</span><span>Web design</span></li>
+                            <li><span>Website development</span></li>
+                            <li><span>Full stack web development</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="experinence">
+                        <ul>
+                            <li><span>1 year Experinence</span><span>Web design</span></li>
+                            <li><span>Website development</span></li>
+                            <li><span>Full stack web development</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="education">
+                        <ul>
+                            <li><span>None css backgroud</span></li>
+                            <li><span>Government Shaheed Suhrawardy College</span></li>
+                            <li><span>Higher-secondary education (HSC).</span></li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-titel" id="sub_titel">My Services</h1>
+        <div class="services-list" id="services_list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Designer</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium aperiam amet consequatur at, provident rerum.</p>
+                <a href="#">Leran More</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UX/UI Designer</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium aperiam amet consequatur at, provident rerum.</p>
+                <a href="#">Leran More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>App Designer</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium aperiam amet consequatur at, provident rerum.</p>
+                <a href="#">Leran More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-------portofolio----->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-titel">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The App connect you the talented peoplo around the world Download with form playstore</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3> Music App</h3>
+                    <p>The App connect you the talented peoplo around the world Download with form playstore</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Online shoping App</h3>
+                    <p>The App connect you the talented peoplo around the world Download with form playstore</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-------contact--------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-titel">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i>+8801759366647</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download Cv</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright @ Rajib <i class="fa-solid fa-heart"></i> made with by bd</p>
+    </div>
+</div>
+
+
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+
+<script>
+
+//Setup and start animation! -->
+
+  var typed = new Typed('.auto-type', {
+    strings: ['<i>Developer</i>.', '<i>Designer</i>'],
+    typeSpeed: 150,
+    backSpeed:150,
+    loop:true
+  });
+
+
+
+
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+
+<script>
+    var sidemenu = document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbziaqX4kRMNN58To5eWEuUBzy6Q76ceuN_LKEtm3WLFBJX-6yieRvaEMaSBoMEcHMNQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+     
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            msg.innerHTML = 'Message sent successfully <i class="fa-solid fa-heart"></i>'
+            setTimeout(function(){
+            msg.innerHTML = ''
+        },5000)
+        form.reset()
+        })
+
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+
+<script>
+
+    $(document).ready(function (){
+      let offset = { offset:"80%"}
+          $("#sub_titel").waypoint(function (){
+    
+            $("#sub_titel").addClass(
+                "animate__animated animate__fadeInTopLeft")
+          },
+          offset );
+    
+        //services list 
+
+        $("#services_list").waypoint(function (){
+    
+    $("#services_list").addClass(
+        "animate__animated animate__fadeInRight");
+  },
+  offset );
+          
+  $("#txt1").waypoint(function (){
+    
+    $("#txt1").addClass(
+        "animate__animated animate__fadeInDownBig");
+  },
+  offset );
+
+//about_col_1
+$("#about_col_1").waypoint(function (){
+    
+    $("#about_col_1").addClass(
+        "animate__animated animate__zoomIn");
+  },
+  offset );
+
+  $("#about_col_2").waypoint(function (){
+    
+    $("#about_col_2").addClass(
+        "animate__animated animate__fadeInDownBig");
+  },
+  offset );
+
+
+  $("#about_col_3").waypoint(function (){
+    
+    $("#about_col_3").addClass(
+        "animate__animated animate__zoomIn");
+  },
+  offset );
+  
+    });
+    
+    
+    
+    
+    
+    
+    
+      </script>
+      
+    
+      
+
+<script src="text.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe to google sheet</title>
+    <link rel="shortcut icon" href="send-icon.png">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .hero{
+            width: 100%;
+            height: 100vh;
+            background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(background.png);
+            background-position: center;
+            background-size: cover;
+            padding: 10px 10%;
+            color:#fff ;
+        }
+        .hero h3{
+            margin-top: 15%;
+            font-weight: 400;
+            font-size: 30px;
+        }
+        .hero h3 span{
+            color: hwb(240 5% 6%);
+        }
+        .hero h1{
+            margin-top: 30px;
+            font-size: 50px;
+        }
+        .hero p{
+            margin: 10px 0 50px;
+        }
+        form{
+            background: #fff;
+            width: fit-content;
+            display: flex;
+        }
+        form input{
+            border: none;
+            outline: none;
+            padding: 10px 20px;
+            height: 60px;
+            width: 400px;
+            font-size: 16px;
+        }
+        form button{
+            background: #61b752;
+            border: none;
+            outline: none;
+            height: 60px;
+            width: 100px;
+            cursor: pointer;
+        }
+        span{
+            color: hsla(111, 41%, 52%, 0.696);
+            margin-top: 10px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    
+<div class="hero">
+    <h3>Comeing Soon!</h3>
+    <h1>Our Brand New<br>Website is On it`s Way</h1>
+    <p>Subscribe for more details</p>
+    <form name="submit-to-google-sheet">
+        <input type="email" name="Email" placeholder="Enter your email id" required>
+        <button type="submit"><img src="send-icon.png" width="30px"></button>
+    </form>
+<span id="msg"></span>
+</div>
+
+
+
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx9xirgDiDX4z4Z8z7yWMdTvdk9XUhUGg5ZvLWVuFkruC5V9WMf2x_l8Ldfnh3p-MzD/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    const msg =document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Thanks You For Subscribing"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
